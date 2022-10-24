@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    <header>
+
+        <div id="mainContainer">
+            <div id="centeringDiv">
+                <!-- Staggered Header -->
+                <div id="headerDiv">
+                    <h1 style="text-align:left; color:#6CF;">TEMPERATURE</h1>
+                    <h1 style="text-align:right; color:#FF4;">CONVERTER</h1>
+                </div>
+
+                <!-- Converter Section -->
+                <div id="converterDiv">
+
+                    <!-- INPUT -->
+                    <div id="inputSection">
+                        <div id="inputTempDiv">ENTER HERE!!!
+                            <form id="entryForm" onSubmit="return false">
+                                <input type="text" placeholder="Enter a value" id="tempValue" onKeyDown="if(event.keyCode==13) tempConvert(value);"></input>
+                                <button type="button" id="startButton" onclick="tempConvert(this.form.tempValue.value)">
+                                    <p>convert
+                                    </p>
+                                </button>
+                            </form>
+                        </div>
+                        <div id="unitContainer">
+                            <div id="initialUnit" class="container">
+                                <p class="top">Current Unit</p><br>
+                                <input id="fahrenheitInitial" name="initial" type="radio" />
+                                <label for="fahrenheitInitial">
+                                    <span style="opacity:0.3;">X</span></label>
+                                <p>Fahrenheit</p><br>
+
+                                <input id="celsiusInitial" name="initial" type="radio" />
+                                <label for="celsiusInitial">
+                                    <span style="opacity:0.3;">X</span></label>
+                                <p>Celsius</p><br>
+
+                                <input id="kelvinInitial" name="initial" type="radio" />
+                                <label for="kelvinInitial">
+                                    <span style="opacity:0.3;">X</span></label>
+                                <p>Kelvin</p>
+                            </div>
+                            <div id="finalUnit" class="container">
+                                <p class="top">Desired Unit</p><br>
+                                <input id="fahrenheitFinal" name="final" type="radio" />
+                                <label for="fahrenheitFinal">
+                                    <span style="opacity:0.3;">X</span></label>
+                                <p>Fahrenheit</p><br>
+
+                                <input id="celsiusFinal" name="final" type="radio" />
+                                <label for="celsiusFinal">
+                                    <span style="opacity:0.3;">X</span></label>
+                                <p>Celsius</p><br>
+
+                                <input id="kelvinFinal" name="final" type="radio" />
+                                <label for="kelvinFinal">
+                                    <span style="opacity:0.3;">X</span></label>
+                                <p>Kelvin</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- OUTPUT -->
+                    <div id="outputSection">
+                        <div id="outputDiv"><br><br></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script src="index.js"></script>
+</body>

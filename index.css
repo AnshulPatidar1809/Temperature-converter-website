@@ -1,0 +1,199 @@
+body {
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+#mainContainer {
+    position: absolute;
+    height: 100%;
+    min-height: 50vw;
+    width: 100vw;
+    background-color: #415052;
+    overflow: hidden;
+}
+
+#centeringDiv {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#headerDiv {
+    display: block;
+    width: 54vw;
+    background: none;
+    margin: 2vh auto;
+    overflow: hidden;
+    opacity: 0.5;
+}
+
+#headerDiv>h1 {
+    font-family: tahoma;
+    font-size: 5vw;
+    letter-spacing: 0.4vw;
+    font-weight: 600;
+}
+
+#converterDiv {
+    display: block;
+    width: 60vw;
+    height: auto;
+    padding-bottom: 2.5vh;
+    min-height: 215px;
+    min-width: 350px;
+    margin: 2vh auto 6vh auto;
+    background: rgba(238, 238, 221, 0.95);
+    border-radius: 2em;
+    border: 2px solid #BBC;
+    overflow: hidden;
+}
+
+#inputTempDiv {
+    display: block;
+    padding: 1vh 6vw;
+    height: auto;
+    min-height: 65px;
+    width: 58%;
+    margin: 3.6vh auto 2vh auto;
+    border-radius: 0.7em;
+    background: #999;
+    font-size: 3vw;
+    overflow: hidden;
+    text-align: center;
+    font-family: tahoma;
+    color: #2d3952;
+    font-weight: 600;
+    letter-spacing: 0.1vw;
+}
+
+#inputTempDiv input {
+    display: inline-block;
+    margin: 3vh auto;
+    font-size: 1.8vw;
+    height: 25%;
+    width: 65%;
+    padding-left: 1.5%;
+}
+
+#inputTempDiv input:focus {
+    outline: none;
+}
+
+#entryForm>button {
+    height: 4vw;
+    width: 20%;
+    background: #555;
+    overflow: hidden;
+    border: 1px solid black;
+    margin: 0 0 0 0;
+    /* padding-top: 0.vw; */
+}
+
+#entryForm>button:focus {
+    outline: none;
+}
+
+#entryForm>button:active {
+    background: #777;
+}
+
+#entryForm>button p {
+    font-size: 1.4vw;
+    color: #FFF;
+    letter-spacing: 0.1vw;
+    line-height: 0vw;
+}
+
+.container {
+    position: relative;
+    display: inline-block;
+    background: #999;
+    overflow: hidden;
+    padding-bottom: 2%;
+    margin-bottom: 2vh;
+    height: 20%;
+    width: 19vw;
+    min-width: 110px;
+    border-radius: 0.85em;
+}
+
+#unitContainer {
+    display: block;
+    width: 68%;
+    height: auto;
+    margin: 0 auto;
+}
+
+#initialUnit {
+    float: left;
+}
+
+#finalUnit {
+    float: right;
+}
+
+.container>.top {
+    margin: 0.2vw auto !important;
+    background: none !important;
+    color: #2d3952!important;
+    padding-left: 20%;
+    font-weight: 600 !important;
+}
+
+.container>input {
+    visibility: hidden;
+    float: left;
+}
+
+.container>label {
+    display: inline-block;
+    height: 1vw;
+    width: 1vw;
+    border: 2px solid #333;
+    margin-left: 0.25vw;
+    background: #777;
+    font-family: tahoma;
+    text-align: center;
+    color: #777;
+    font-size: 1.1vw;
+    line-height: 1vw;
+    font-weight: 600;
+    overflow: hidden;
+}
+
+.container>input:checked+label {
+    background: rgb(102, 242, 255);
+    color: #333;
+}
+
+.container>p {
+    display: inline-block;
+    background: #777;
+    color: #380f75;
+    font-family: tahoma;
+    text-align: left;
+    margin: 3% 8% 0 2%;
+    padding: 1% 3%;
+    font-size: 1.6vw;
+    line-height: 1.6vw;
+    letter-spacing: 0.15vw;
+}
+
+#outputDiv {
+    display: block;
+    padding: 1vh 6vw;
+    height: auto;
+    min-height: 45px;
+    width: 58%;
+    margin: 3.6vh auto 2.5vh auto;
+    border-radius: 0.7em;
+    background: #999;
+    font-size: 2.2vw;
+    overflow: hidden;
+    text-align: center;
+    font-family: tahoma;
+    color: #FF6;
+    font-weight: 600;
+    letter-spacing: 0.1vw;
+}
